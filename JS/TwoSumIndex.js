@@ -30,3 +30,5 @@ function TwoSumIndex(arr, target) {
   }
 }
 // return [0,3]
+
+
