@@ -32,15 +32,19 @@ console.log(maximumSubarray([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
 
 function maximumSubarray(arr) {
   let sum = 0;
-  let newArray = [...new Set(arr)];
-  for (let i = 1; i <= newArray.length; i++) {
-    if (newArray[i] >= -1) {
-      sum += newArray[i];
+  let max = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      sum = arr[i] + arr[j];
+      if (sum > max) {
+        max = sum;
+      } else {
+        break;
+      }
     }
   }
-  return sum;
+  return max;
 }
-
 // function maximumSubarray(arr){
 
 //   return arr.reduce((acc,curr)=>{
