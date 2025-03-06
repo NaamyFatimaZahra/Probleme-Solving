@@ -15,3 +15,20 @@
   
 echo $result;
 
+
+function test($x, $y) 
+{
+    
+    return $x == $y ? ($x + $y)*3 : $x + $y;
+}
+
+// Call the test function with arguments 1 and 2, and echo the result
+echo test(1, 2) . "\n";
+
+// Call the test function with arguments 3 and 2, and echo the result
+echo test(3, 2) . "\n";
+
+// Call the test function with arguments 2 and 2, and echo the result
+echo test(2, 2) . "\n";
+?> 
+
