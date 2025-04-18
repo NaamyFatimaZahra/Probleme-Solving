@@ -11,4 +11,5 @@ function findMinMaxElement(arr) {
   }
   console.log(`min${min},max${max}`);
 }
-findMinMaxElement([1, 2, 2, 4, 8, 12, 122]);
+findMinMaxElement([1, 2, 2, 4, 8, 12,  122]);
+
