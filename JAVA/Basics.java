@@ -110,4 +110,35 @@ public class Main{
     }
 }
 
-//10. Formula Computation
+//11. Circle: Area and Perimeter
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Entrer Radius d'une circle:");
+        float Radius=scanner.nextFloat();
+
+        System.out.println("Perimeter: " + Radius*Math.PI*2);
+        System.out.println("Area: " + Math.PI*Radius*Radius);
+
+    }
+}
+
+//12. Average of Three Numbers
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Entrer 1ere nombre:");
+        float nombre1=scanner.nextFloat();
+        System.out.println("Entrer 2ere nombre:");
+        float nombre2=scanner.nextFloat();
+        System.out.println((nombre1+nombre2)/2);
+
+
+    }
+}
